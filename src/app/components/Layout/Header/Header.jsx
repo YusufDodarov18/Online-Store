@@ -434,17 +434,22 @@ const Header = () => {
                   <Link to={`/account/changeAccount`}>
                     <MenuItem onClick={handleClose}>
                       {profile?.avatar ? (
-                         <Avatar 
-                           src={`https://online-store-api-f0io.onrender.com/images/${user.avatar}`} 
-                           alt={user.userName}
-                           sx={{
-                             width: 30,
-                             ml: "-15px",
-                             height: 30,
-                           }}
-                           /> My account
+                        <>
+                          <Avatar
+                            src={`https://online-store-api-f0io.onrender.com/images/${user.avatar}`}
+                            alt={user.userName}
+                            sx={{
+                              width: 30,
+                              ml: "-15px",
+                              height: 30,
+                            }}
+                          />{" "}
+                          My account
+                        </>
                       ) : (
-                         <Avatar /> My account
+                        <>
+                          <Avatar /> My account
+                        </>
                       )}
                     </MenuItem>
                   </Link>
