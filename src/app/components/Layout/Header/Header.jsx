@@ -368,7 +368,7 @@ const Header = () => {
                       {user?.avatar ? (
                         <Avatar
                           src={
-                            `http://localhost:3000/images/${user.avatar}` ||
+                            `https://online-store-api-f0io.onrender.com/images/${user.avatar}` ||
                             "/default-avatar.png"
                           }
                           alt={user.userName}
