@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    overflow-x: hidden;
+}
+
+.dark-search .ant-input {
+  background-color: #1f1f1f;
+  color: #fff;
+  border-color: #444;
+}
+
+.dark-search .ant-input::placeholder {
+  color: #aaa;
+}
