@@ -36,7 +36,7 @@ export default function Wishlist() {
                         <Box key={elem.productId}>
                             <Box className={`${theme ? " bg-gray-800" : "bg-[#F5F5F5]"} w-[200px] h-[200px] px-2 flex justify-center items-center transition-transform duration-300 hover:scale-105 relative`}>
                                 <Box className="flex justify-between gap-1">
-                                    <img className="object-center w-[125px] h-35" src={`http://localhost:3000/images/${elem.images?.[0]?.image}`} />
+                                    <img className="object-center w-[125px] h-35" src={`https://online-store-api-f0io.onrender.com/images/${elem.images?.[0]?.image}`} />
                                     <Box className="flex flex-col absolute top-2 right-2 gap-2">
                                         <button
                                             className={`cursor-pointer ${theme ? "bg-gray-800" : "bg-white"} p-1 rounded-full`}
